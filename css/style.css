@@ -1,34 +1,38 @@
 @font-face {
-   font-family: 'BrandonGrotesque';
-   src: url( 'font/webfonts/279D07_2_0.eot');
-   src: local ('Ø'), 
-   url( 'font/webfonts/279D07_2_0.woff') format('woff'), 
-   url( 'font/webfonts/279D07_2_0.ttf') format('truetype'),
-   url( 'font/webfonts/279D07_2_0.svg') format('svg');
+	font-family: 'Brandon Black';
+	src:url('../fonts/Brandon_blk.otf');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-   font-family: 'BrandonGrotesque';
-   src: url( 'font/webfonts/279D07_2_1.eot');
-   src: local ('Ø'), 
-   url( 'font/webfonts/279D07_2_1.woff') format('woff'), 
-   url( 'font/webfonts/279D07_2_1.ttf') format('truetype'),
-   url( 'font/webfonts/279D07_2_1.svg') format('svg');
+	font-family: 'Brandon Black Italic';
+	src:url('../fonts/Brandon_blk_it.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Brandon Medium';
+	src:url('../fonts/Brandon_med.otf');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-   font-family: 'BrandonGrotesque';
-   src: url( 'font/webfonts/279D07_2_2.eot');
-   src: local ('Ø'), 
-   url( 'font/webfonts/279D07_2_2.woff') format('woff'), 
-   url( 'font/webfonts/279D07_2_2.ttf') format('truetype'),
-   url( 'font/webfonts/279D07_2_2.svg') format('svg');
+	font-family: 'Brandon Thin';
+	src:url('../fonts/Brandon_thin.otf');
+	font-weight: normal;
+	font-style: normal;
 }
 
 
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0;}
+body, html { 
+	font-size: 100%; 
+	padding: 0; 
+	margin: 0;
+}
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after { content: " "; display: table; }
@@ -45,84 +49,34 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 
 body {
 	background-color: #DEFAED;	
-	font-family:BrandonGrotesque-Regular, Helvetica;
+	border: 1em solid #fdfdfc;
+	font-family:'Vollkorn', Helvetica;
 	-webkit-font-smoothing: subpixel-antialiased !important;
-
-	
 }
 
 
 .journal {
 	background-color: #fdfdfc;	
-	font-family:BrandonGrotesque-Regular, Helvetica;
-	-webkit-font-smoothing: subpixel-antialiased !important;
-
-	
+	font-family:'Brandon Medium', Helvetica;
+	-webkit-font-smoothing: subpixel-antialiased !important;	
 }
 
 a {
 	
 	color: #525252;
-	font-family:BrandonGrotesque-Bold,Helvetica;
+	font-family:'Brandon Medium',Helvetica;
 	letter-spacing: 1px;	
 }
 
 h2 {
 	color: #525252;
-	font-family:BrandonGrotesque-Bold,Helvetica;
+	font-family:'Brandon Medium',Helvetica;
 	font-style: 19px;
 	letter-spacing: 2px;
 }
 
 
 
-/**** BORDER BROWSER ****/
-
-
-#top, #bottom, #left, #right {
-	background: #f0efe8;
-	
-	position: fixed;
-	}
-	#left, #right {
-		top: 0; bottom: 0;
-		width: 16px;
-		z-index: 1000;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
-		
-	#top, #bottom {
-		z-index: 1000;
-		left: 0; right: 0;
-		height: 16px;
-		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
-/**** BORDER BROWSER JOUNRAL ****/
-
-
-#top2, #bottom2, #left2, #right2 {
-	background: #f0efe8;
-	
-	position: fixed;
-	}
-	#left2, #right2 {
-		top: 0; bottom: 0;
-		width: 15px;
-		z-index: 900;
-		}
-		#left2 { left: 0; }
-		#right2 { right: 0; }
-		
-	#top2, #bottom2 {
-		z-index: 900;
-		left: 0; right: 0;
-		height: 15px;
-		}
-		#top2 { top: 0; }
-		#bottom2 { bottom: 0; }
-		
 
 
 
@@ -158,7 +112,7 @@ h2 {
 .link_page {
 	letter-spacing: 0px;
 	text-decoration: none;
-	font-family:BrandonGrotesque-RegularItalic,Helvetica;
+	font-family:'Brandon Medium',Helvetica;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
@@ -207,7 +161,7 @@ h2 {
 
 #go p{
 	font-size: 35px;
-	font-family:BrandonGrotesque-Bold,Helvetica;
+	font-family:'Brandon Medium',Helvetica;
 	letter-spacing: 3px;
 }
 
@@ -218,7 +172,7 @@ h2 {
 	text-align: center;
 	padding: 10px 25px 5px 25px;
 	border: 3px solid #525252;
-	font-family:BrandonGrotesque-RegularItalic,Helvetica;
+	font-family:'Brandon Medium',Helvetica;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
@@ -229,14 +183,14 @@ h2 {
 #go a:hover {
 	color: rgba(81,81,81,0.4);
 	border: 3px solid rgba(81,81,81,0.4);
-	font-family:BrandonGrotesque-RegularItalic,Helvetica;
+	font-family:'Brandon Medium',Helvetica;
 	-webkit-transition: all .3s ease-in-out;
 }
 
 
 
 #go span {
-	font-family:BrandonGrotesque-RegularItalic,Helvetica;
+	font-family:'Brandon Medium',Helvetica;
 }
 
 
@@ -250,7 +204,7 @@ h2 {
 	opacity: 0;
 	position: relative;
 	top: -20px;
-	font-family:BrandonGrotesque-Regular,Helvetica;
+	font-family:'Brandon Medium',Helvetica;
 	letter-spacing: 0px;
 	padding-top: 0px;
 	text-align: center;
@@ -265,7 +219,7 @@ header  {
 	margin: 0 auto;
 	text-align: center;
 	color: #525252;
-	font-family:BrandonGrotesque-Regular,Helvetica
+	font-family:'Brandon Medium',Helvetica
 }
 
 
@@ -278,7 +232,7 @@ header  {
 	padding: 130px 0px 140px 0px;
 	text-align: center;
 	color: #525252;
-	font-family:BrandonGrotesque-Bold,Helvetica;
+	font-family:'Brandon Medium',Helvetica;
 }
 
 
@@ -310,14 +264,12 @@ header  {
 }
 
 
-
-
 #name  p {
 	color: rgba(81,81,81,0.5);
 	letter-spacing: 3px;
 	font-size: 19px;
 	margin-top: -20px;
-	font-family:BrandonGrotesque-RegularItalic,Helvetica;
+	font-family:'BrandonGrotesque-RegularItalic',Helvetica;
 	
 }
 
@@ -346,14 +298,10 @@ margin-top: -50px;
 margin-bottom: 30px;
 }
 
-
 #name_about h1  {
 	letter-spacing: 3px;
 	text-transform: uppercase;
 }
-
-
-
 
 #name_about  p {
 	color: rgba(81,81,81,0.5);
@@ -367,7 +315,6 @@ margin-bottom: 30px;
 		
 /************************************************************************* ABOUT SECTION START *************************************************************************/
 
-
 .about_container {
 	margin: 0px auto 0px auto;
 	padding: 10px 0px 60px 0px;
@@ -378,8 +325,6 @@ margin-bottom: 30px;
 	color: #525252;
 }
 
-
-
 .about {
     display: -moz-inline-box;
     display: inline-block;
@@ -387,7 +332,6 @@ margin-bottom: 30px;
     max-width:	400px;
 	margin: 60px 60px 30px 30px;
 }
-
 
 .about p {
 	font-size: 16px;
@@ -402,7 +346,6 @@ margin-bottom: 30px;
 	text-align: left;
 	margin-bottom: 40px;
 }
-
 
 .about img{
     margin-top: 100px;
@@ -766,7 +709,7 @@ font-size: 1.3em;
 
 
 #fademenu {
-background: #f0efe8;
+background: #fdfdfc;
 display: none;
 position: fixed;
 right: 0;
@@ -777,7 +720,6 @@ z-index:995;
 text-align: right;
 padding-top: 10px;
 }
-
 
 
 .navscroll{
@@ -792,21 +734,19 @@ padding-top: 10px;
 
 
 .navscroll a{
-	
 	text-decoration: none;
 	text-transform: uppercase;
     color: #525252;
     font-family:BrandonGrotesque-Regular,Helvetica;
-    font-size: 16px;
+    font-size: 15px;
     padding-right: 15px;
     -webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
-	}
+}
 	
-	
-	.navscroll a:hover{
+.navscroll a:hover{
 	color: rgba(81,81,81,0.5);
     
 }
@@ -834,7 +774,7 @@ padding-top: 10px;
 
 
 nav{
-    margin:50px 60px 0px 0px;
+    margin:2em 2em 0px 0px;
     text-align:right;
 }
 
@@ -844,7 +784,7 @@ nav a{
 	text-transform: uppercase;
     color: #525252;
     font-family:BrandonGrotesque-Regular,Helvetica;
-    font-size: 16px;
+    font-size: 15px;
     padding-right: 15px;
     -webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
@@ -1076,7 +1016,7 @@ figcaption {
 
 
 
-#copyright_wrapper {
+.footer {
 	display: -moz-inline-box;
     display: inline-block;
     vertical-align: top;
@@ -1087,7 +1027,7 @@ figcaption {
 }
 
 
-#copyright_wrapper p{
+.footer p{
 	border-top :1px solid rgba(81,81,81,0.4);
 	padding-top: 10px;
 	text-align: right;
@@ -1095,7 +1035,7 @@ figcaption {
 	font-size: 15px;
 }
  
-#copyright_wrapper a{
+.footer a{
 	color: rgba(81,81,81,0.4);
 	text-decoration: none;
 	font-family:BrandonGrotesque-Bold,Helvetica;
@@ -1106,13 +1046,10 @@ figcaption {
 }
 
 
-#copyright_wrapper a:hover{
+.footer a:hover{
 	color: rgba(81,81,81,1);
 
 }
-
-
-
 
 
 .marker1{
@@ -1526,12 +1463,12 @@ color: rgba(81,81,81,0.4);
 }
 
 
-#copyright_wrapper2 {
+.footer {
 	max-width: 300px;
 	margin:  200px auto 40px auto;
 }
 
-#copyright_wrapper2 p{
+.footer  p{
 	border-top :1px solid rgba(81,81,81,0.4);
 	padding-top: 10px;
 	text-align: right;
@@ -1539,7 +1476,7 @@ color: rgba(81,81,81,0.4);
 	font-size: 15px;
 }
  
-#copyright_wrapper2 a{
+.footer  a{
 	color: rgba(81,81,81,0.4);
 	text-decoration: none;
 	font-family:BrandonGrotesque-Bold,Helvetica;
@@ -1550,7 +1487,7 @@ color: rgba(81,81,81,0.4);
 }
 
 
-#copyright_wrapper2 a:hover{
+.footer  a:hover{
 	color: rgba(81,81,81,1);
 
 }
@@ -1817,12 +1754,11 @@ color: rgba(81,81,81,0.4);
 /********************************************************************* @MEDIA QUERIES@ *********************************************************************/
 
 
-@media only screen and (max-width : 1117px),
-only screen and (max-device-width : 1117px){
+@media only screen and (max-width : 1117px){
 
 
 
-#copyright_wrapper {
+.footer  {
 
 	margin-right: 25px;
 	margin-top: 18px;
@@ -2313,8 +2249,7 @@ font-size: 1em;
 
 
 
-@media only screen and (max-width : 530px),
-only screen and (max-device-width : 530px){
+@media only screen and (max-width : 530px){
 
 #fullscreen {
 	visibility: hidden;
@@ -2330,8 +2265,7 @@ only screen and (max-device-width : 530px){
 
 /*IPHONE*/
 
-@media only screen and (max-width : 320px),
-only screen and (max-device-width : 320px){
+@media only screen and (max-width : 320px){
 
 
  
