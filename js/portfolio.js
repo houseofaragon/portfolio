@@ -7,8 +7,6 @@ $(window).load(function() { // makes sure the whole site is loaded
 $("#status").fadeOut(); // will first fade out the loading animation
 $("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
 
-
-
 $('#name').delay(200).animate({
          'opacity' : '1',
          'top' : '+=20px'
@@ -107,26 +105,29 @@ $('.marker').delay(400).animate({
          'top' : '+=30px'
     }, { duration: 700, easing: 'swing' });
     
-    
-    
 });
+
 
 
 
 /**** NAVSCROLL****/
 
+$('.target-link').on('click',function(){
+    event.preventDefault();
+    var target = "#" + $(this).data('target');
+    $('html, body').animate({
+        scrollTop: $(target).offset().top
+    }, 2000);
+});
 
 
 $(window).scroll(function(){
- 
     if ($(this).scrollTop() > 65) {
     $('#fademenu').fadeIn();
     }
     else {
     $('#fademenu').fadeOut();
     }
- 
-
 });
 
 /* d3.js */
