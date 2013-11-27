@@ -1,0 +1,49 @@
+grant_title,id,organization,total_amount,group,Grant start date,start_month,start_day,start_year
+Bank Of America,1,Unsolicited issuance of credit card,19,boc,2/4/2010,2,4,2010
+Bank Of America,2,Forbearance / Workout plans,23,boc,8/3/2009,8,3,2009
+Bank Of America,3,Late fee,45,boc,11/12/2009,11,12,2009
+Bank Of America,4,Collection Practices,59,boc,3/11/2010,3,11,2010
+Bank Of America,5,Customer service / Customer relations,63,boc,10/12/2009,10,12,2009
+Bank Of America,6,Other,93,boc,6/30/2009,6,30,2009
+Bank Of America,7,Credit card protection / Debt protection,94,boc,9/24/2009,9,24,2009
+Bank Of America,8,Identity theft / Fraud / Embezzlement,121,boc,10/29/2009,10,29,2009
+Bank Of America,9,Credit reporting,147,boc,11/16/2009,11,16,2009
+Bank Of America,10,Closing/Cancelling account,175,boc,10/28/2009,10,28,2009
+Bank Of America,11,APR or interest rate,177,boc,11/2/2009,11,2,2009
+Bank Of America,12,Billing Disputes,299,boc,11/2/2009,11,2,2009
+Citibank,13,Unsolicited issuance of credit card,26,citi,11/2/2009,11,2,2009
+Citibank,14,Forbearance / Workout plans,41,citi,11/2/2009,11,2,2009
+Citibank,15,Late fee,52,citi,10/28/2009,10,28,2009
+Citibank,16,Collection Practices,94,citi,11/10/2009,11,10,2009
+Citibank,17,Customer service / Customer relations,102,citi,11/13/2009,11,13,2009
+Citibank,18,Other,107,citi,11/1/2009,11,1,2009
+Citibank,19,Credit card protection / Debt protection,109,citi,3/24/2010,3,24,2010
+Citibank,20,Identity theft / Fraud / Embezzlement,120,citi,10/29/2009,10,29,2009
+Citibank,21,Credit reporting,146,citi,11/4/2009,11,4,2009
+Citibank,22,Closing/Cancelling account,172,citi,10/1/2008,10,1,2008
+Citibank,23,APR or interest rate,291,citi,10/30/2009,10,30,2009
+Citibank,24,Billing Disputes,392,citi,1/28/2010,1,28,2010
+JPMorgan Chase,25,Unsolicited issuance of credit card,13,chase,11/17/2009,11,17,2009
+JPMorgan Chase,26,Forbearance / Workout plans,22,chase,5/13/2009,5,13,2009
+JPMorgan Chase,27,Late fee,30,chase,3/1/2008,3,1,2008
+JPMorgan Chase,28,Collection Practices,39,chase,10/1/2009,10,1,2009
+JPMorgan Chase,29,Customer service / Customer relations,63,chase,4/30/2010,4,30,2010
+JPMorgan Chase,30,Other,69,chase,3/18/2010,3,18,2010
+JPMorgan Chase,31,Credit card protection / Debt protection,85,chase,11/4/2009,11,4,2009
+JPMorgan Chase,32,Identity theft / Fraud / Embezzlement,104,chase,6/19/2009,6,19,2009
+JPMorgan Chase,33,Credit reporting,113,chase,7/22/2009,7,22,2009
+JPMorgan Chase,34,Closing/Cancelling account,123,chase,2/26/2010,2,26,2010
+JPMorgan Chase,35,APR or interest rate,197,chase,7/28/2009,7,28,2009
+JPMorgan Chase,36,Billing Disputes,416,chase,11/9/2009,11,9,2009
+Wells Fargo,37,Unsolicited issuance of credit card,6,wells,11/20/2009,11,20,2009
+Wells Fargo,38,Forbearance / Workout plans,14,wells,11/6/2009,11,6,2009
+Wells Fargo,39,Late fee,22,wells,3/1/2008,3,1,2008
+Wells Fargo,40,Collection Practices,24,wells,10/9/2009,10,9,2009
+Wells Fargo,41,Customer service / Customer relations,29,wells,10/27/2009,10,27,2009
+Wells Fargo,42,Other,30,wells,7/1/2008,7,1,2008
+Wells Fargo,43,Credit card protection / Debt protection,41,wells,8/29/2009,8,29,2009
+Wells Fargo,44,Identity theft / Fraud / Embezzlement,64,wells,3/2/2009,3,2,2009
+Wells Fargo,45,Credit reporting,65,wells,9/29/2009,9,29,2009
+Wells Fargo,46,Closing/Cancelling account,82,wells,1/1/2009,1,1,2009
+Wells Fargo,47,APR or interest rate,100,wells,2/25/2010,2,25,2010
+Wells Fargo,48,Billing Disputes,104,wells,10/1/2008,10,1,2008

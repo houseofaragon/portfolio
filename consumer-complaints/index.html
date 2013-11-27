@@ -1,0 +1,94 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Consumer Complaints of the Top Four US Banks</title>
+  <meta name="description" content="">
+  <meta name="author" content="Karen C. Aragon">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
+
+  <!-- end CSS-->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+  <div id="previous_project">
+      <div class="prev_text">
+        <a href="../Tastefully/index.html">Prev </a>
+      </div>
+      <div class="prev_note"> < </div>
+    </div>
+    <div id="next_project">
+            <div class="next_note"> > </div>
+
+      <div class="next_text">
+        <a href="../stop-and-frisk/index.html">Next</a>
+      </div>
+    </div>
+  <div class="container">
+    <header>
+    <h1>Consumer Complaints</i> of the Top Four US Banks</h1>
+    <hr/>
+    </header>
+      <div id="view_selection" >
+        <a href="#" id="all" class="choice active">All Banks</a>
+        <a href="#/bank" id="bank" class="choice" >Complaints By Bank</a>
+        <a href="#/complaint" id="complaint" class="choice" >All Complaints</a>
+        <a href="#/year" id="year" class="choice">Complaints by Year</a>
+        <a href="#" id="info" class="choice">Info</a>
+      </div>
+
+      <div id="info-box">hey</div>
+
+      <div id="vis"></div>
+    <footer>
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <script src="js/CustomTooltip.js"></script>
+  <script src="js/libs/coffee-script.js"></script>
+  <script src="js/libs/d3.min.js"></script>
+  <script src="js/libs/d3.csv.min.js"></script>
+  <script src="js/libs/d3.layout.min.js"></script>
+  <script src="js/libs/d3.geom.min.js"></script>
+  <script type="text/coffeescript" src="coffee/vis.coffee"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(document).ready(function() {
+          $('#view_selection a').click(function() {
+            var view_type = $(this).attr('id');
+            $('#view_selection a').removeClass('active');
+            $(this).toggleClass('active');
+            toggle_view(view_type);
+            return false;
+          });
+        });
+
+        $('#view_selection a#info').click(function(){
+            $('#view_selection a').removeClass('active');
+            $('#info-box').toggle('slow');
+        })
+    });
+  </script>
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
