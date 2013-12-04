@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    	<meta name="description" content="Jazz Drum Machine:  Powered by Echo Nest Remix">
+    	<meta name="author" content="Ben Lacker. Thanks to: Brian Whitman / Paul Lamere / Thor Kell">
+
+		<title>JAZZ DM by Ben Lacker</title>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" media="screen, projection" href="../css/fonts.css">
+		<link rel="stylesheet" media="screen, projection" href="index.css">
+
+		<style type="text/css">
+			/*one column*/
+			@media only screen and (max-width: 639px) {
+				div#main section { width: 300px; }
+			}
+
+			/*two columns*/
+			@media only screen and (min-width: 640px) and (max-width: 959px) {
+				div#main section { width: 620px; }
+			}
+		</style>
+	</head>
+
+	<body>
+	<div id="previous_project">
+	  <div class="prev_text">
+	    <a href="../stop-and-frisk/index.html">Prev </a>
+	  </div>
+	  <div class="prev_note"> < </div>
+	</div>
+	<div id="next_project">
+	  <div class="next_note"> > </div>
+	  <div class="next_text">
+	    <a href="../fdic/index.html">Next</a>
+	  </div>
+	</div>
+		<div id="top" class="group">
+			<div class="repo group clearfix">
+					<div class="logo">JAZZ DRUM MACHINE</div>
+					<div id="info"></div>
+
+			</div>
+			<menu>
+				<div class="arrow"></div>
+				<ul>
+					<li><a href="#choose-drummer">Choose a drummer</a></li>
+					<li><a href="#choose-file">Upload a file</a></li>
+				</ul>
+			</menu>
+		</div>
+
+		<div id="main">
+			<section id="choose-drummer">
+	  			<select id='select-drummer'></select>
+			</section>
+			<section id="choose-file">
+				<div id='select-track'>
+		            <form action="https://s3.amazonaws.com/static.echonest.com" method="post" enctype="multipart/form-data">
+		              <input id='f-filename' type="hidden" name="key" value="remix_audio/${filename}">
+		              <input id='f-key' type="hidden" name="AWSAccessKeyId" value="YOUR_AWS_ACCESS_KEY"> 
+		              <input type="hidden" name="acl" value="public-read"> 
+		              <input id='redirect-url' type="hidden" name="success_action_redirect"
+		                  value="YOUR_URL">
+		              <input id='f-policy' type="hidden" name="policy" value="YOUR_POLICY_DOCUMENT_BASE64_ENCODED">
+		              <input id='f-signature' type="hidden" name="signature" value="YOUR_CALCULATED_SIGNATURE">
+		              <input type="hidden" name="Content-Type" value="audio/mpeg">
+		              <input id="file" name="file" type="file"> 
+		              
+		              <input class="btn" id='upload' type="submit" value="Upload MP3"> 
+		            </form> 
+		            <br/>
+		        </div>
+			</section>
+	        <section id='play-remix'>
+					<div id="buttons">
+						<button class="btn" onClick="play();">Play</button>
+					    <button class="btn" onClick="handleStop()">Stop</button>
+					</div>
+	            	<span id='downloadButton'></a>
+					<div id="allsliders"></div>
+	        </section>		
+    	</div>
+
+    	<section id="contact">
+    		<footer>
+				<h2> Created by <a href="http://soundcloud.com/benlacker">Ben Lacker</a>. 
+		        Powered by <a href<="http://echonest.com">The Echo Nest</a>. Do <a href="mailto:benlacker@gmail.com">get in touch</a>.
+				</h2>
+			</footer>
+		</section>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<script type="text/javascript" src='remix.js'></script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<script src="fancySelect.js"></script>
+		<script type="text/javascript" src='kmeans.js'></script>
+		<script type="text/javascript" src='jazzdrum.js'></script>
+	</body>
+</html>
