@@ -1,51 +1,28 @@
-
-@font-face {
-  font-family: 'Brandon Black';
-  src:url('fonts/Brandon_blk.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Brandon Black Italic';
-  src:url('fonts/Brandon_blk_it.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Brandon Medium';
-  src:url('fonts/Brandon_med.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Brandon Thin';
-  src:url('fonts/Brandon_thin.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body{
-  font-family: "Brandon Medium";
+  font-family: 'Brandon Medium', Helvetica, Arial, sans-serif;
   margin: 0 auto;
   background: #f0f0f0;
-  border: 1em solid #fdfdfc;
+  border: 1.4em solid #fdfdfc;
   color: #525252;
   letter-spacing: 2px;
-  text-align: left;
-  font-size: 15px;
+  text-align: center;
+  font-size: 12px;
+}
+.container{
+  width: 960px;
+  margin: 4em auto;
+  color: #525252;
+
 }
 
 h1{
-  font-family: "Brandon Black";
-  font-size: 2em;
-  text-transform: uppercase;
+  font-size: 2.5em;
   letter-spacing: 2px;
-  margin: 2em auto 0.5em;
+  text-transform: uppercase;
   color: #525252;
+  padding: 2em 0 0.5em;
+  font-family: 'Brandon Bold';
 }
-
 
 
 a.choice{
@@ -75,9 +52,13 @@ a.choice:hover{
   background-color: #
 }
 
-.container{
-  width: 960px;
-  margin: 2em auto;
+p{
+  margin: 0 auto;
+  line-height: 1.5em;
+  text-align: center;
+  text-indent: 4em;
+  color: rgba(81,81,81,0.5);
+  padding-bottom: 10px;
 }
 
 #vis {
@@ -96,11 +77,6 @@ a.choice:hover{
 footer {
   text-align: center;
 }
-
-.container #view_selection {
-  margin: 2em auto;
-}
-
 
 .tooltip {
 	position: absolute;
@@ -128,122 +104,15 @@ footer {
   font-weight:bold;
 }
 
-
-
-
-#info-box{
+#info-box {
   display:none;
-}
-
-#previous_project {
-  position: fixed;
-  padding: 10px 15px 15px 14px;
-  left: -60px;
-  top:43%;
-  z-index: 950;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-#previous_project div {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-#previous_project a{
-  text-decoration: none;
-}
-
-#previous_project:hover {
-  left:0px;
-}
-
-.prev_text{
-  font-size: 14px;
-  margin-right: 10px;
-  margin-left: 12px;
-  
-}
-
-.prev_text a{
-  font-family:BrandonGrotesque-Regular, Helvetica;
-  padding-right: 8px;
+  padding: 2em;
+  width: 460px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 
-.prev_note{
-  color: #525252;
-  font-size: 25px;
-  font-family:BrandonGrotesque-Bold,Helvetica;
-
-}
-
-/************************************************************************* NEXT PROJECT BUTTON *************************************************************************/
-
-#next_project {
-  position: fixed;
-  padding: 10px 14px 15px 15px;
-  right: -70px;
-  top:43%;
-  z-index: 950;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-
-#next_project div {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-
-#next_project a{
-  text-decoration: none;
-}
-
-
-#next_project:hover {
-  right:0px;
-}
-
-.next_text{
-  text-align: right;
-  font-size: 14px;
-  margin-left: 20px;
-  margin-right: 18px;
-}
-
-.next_text a{
-  font-family:BrandonGrotesque-Regular, Helvetica;  
-}
-
-.next_note{
-  color: #525252;
-  font-size: 25px;
-  font-family:BrandonGrotesque-Bold,Helvetica;
-}
-
-.link_nextright {
-  height: 40px;
-  width: 60px;
-  padding-left: 20px;
-}
-
-.link_nextleft {
-  height: 40px;
-  width: 60px;
-  padding-right: 30px;
-}
-
-#next_right a  {
-  font-size: 15px;
-  cursor: e-resize;
-  opacity: 1;
-  font-family:BrandonGrotesque-Regular,Helvetica;
-  text-decoration: none;
-
+#previous_project, #next_project {
+  padding: 10px 15px 10px 14px;
 }

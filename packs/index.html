@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel In Packs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+  </head>
+  <body>
+<header id="header" class="inactive"> 
+      <section id="menu" class="row clearfix inactive">
+        <ul class="span_1 column">
+          <li><a href="../packs/">Travel in packs</a></li>
+          <li><a href="../space/">Space is Noisy</a></li>
+          <li><a href="../herbally/index.php">Herbally</a></li>
+          <li><a href="../Tastefully/">Tastefully</a></li>
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../jazz/">Jazz Drum Machine</a></li>
+          <li><a href="../weather/">Do I Need A ____ ?</a></li>
+          <li><a href="../wedding/">Wedding</a></li>
+          <li><a href="../dengine/">dEngine</a></li>
+          <!--<li><a href="../gem/">Global Entertainment MGMT</a></li>-->
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../consumer-complaints/">Credit Card Consumer Complaints</a></li>
+          <li><a href="../stop-and-frisk/">NYPD Stop & Frisk</a></li>
+          <li><a href="../fdic/">FDIC History</a></li>
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="http://www.github.com/houseofaragon">Github</a></li>
+          <li><a target="_blank" href="">Contact</a></li>
+        </ul> 
+      </section>
+      <section id="menu-button" class="row clearfix">MENU</section>
+</header>
+    <div class="container">
+      <div id="info">
+      <p><em>Travel in packs. </em>After watching <a href="http://www.youtube.com/watch?v=B6M_XgiONoo">Blue Planet</a> I wondered why fish swam together in packs. Obvious reasons are to have each other's backs in times of danger and when foraging for food. <a href="http://www.huffingtonpost.com/2013/09/18/fish-schools-genes_n_3947303.html">New research</a> suggests that it's built into their genes. This visualization simulates that school behavior. When you introduce a new species into the mix notice how they gradually navigate towards each other. Additionally, your mouse acts as a source of food, notice how they flock to the pointer when you hover over a school of fish. To create this visualization I read about the <a href="http://harry.me/blog/2011/02/17/neat-algorithms-flocking/">flocking algorithm</a> and modified this <a href="https://gist.github.com/aflaxman/4611181">gist</a>. Many thanks!</p> 
+      <button type="button" id="add">Add New Species!</button>
+      <p id="stats"></p>
+       </div>
+      <div id="area"></div>
+   
+
+    <script type="text/javascript" src="d3.v2.js"></script>
+    <script type="text/javascript"  src="jquery.min.js"></script>
+    <script type="text/javascript" src="boid.js"></script>
+
+    <script type="text/javascript">
+      var w = 1200,
+          h = 900,
+          mouse = [0, 0],
+          degrees = 180 / Math.PI;
+
+      var svg = d3.select("body").append("svg:svg")
+          .attr("width", w)
+          .attr("height", h)
+          .attr("r", 200)
+          .on("mousemove", function() {
+            var m = d3.svg.mouse(this);
+            mouse[0] = m[0];
+            mouse[1] = m[1];
+          })
+          .on("mouseout", function() {
+            mouse[0] = mouse[1] = null;
+          });
+
+      $(function() {
+          var n = Math.random()*25;
+          var m = Math.random()*25;
+          createObject(n,m,svg);
+      });
+
+      function createObject(n,m,svg){
+         
+            // Initialise boids.
+         
+            var boids = d3.range(n).map(function() {
+              return boid()
+                  .position([Math.random() * w, Math.random() * h])
+                  .velocity([Math.random() * 2 - 1, Math.random() * 2 - 1])
+                  .gravityCenter(mouse)
+                  .desiredSeparation(25);
+            });
+
+
+            var spermatozoa = boids.map(function(boid) {
+              return {
+                boid: boid,
+                path: d3.range(m).map(function() { return [boid.position()[0], boid.position()[1]]; }),
+                velocity: boid.velocity(),
+                gravityCenter: boid.gravityCenter(),
+                maxForce: boid.maxForce(),
+                maxSpeed: boid.maxSpeed(),
+                count: 0,
+              };
+            });
+
+
+            var g = this.svg.selectAll("g")
+                .data(spermatozoa)
+                .enter().append("svg");
+
+            var head = g.append("svg:ellipse")
+                .attr("rx", Math.random()*30)
+                .attr("ry",Math.random()*10)
+                .attr("stroke", d3.scale.category20())
+                .attr("fill", d3.scale.category20());
+
+            g.append("svg:path")
+                .datum(function(d) { return d.path.slice(0, 4); })
+                .attr("class", "mid")
+                .attr("fill",d3.scale.category20());
+
+            g.append("svg:path")
+                .datum(function(d) { return d.path; })
+                .attr("class", "tail")
+                .attr("stroke", d3.scale.category10())
+                .attr("fill",d3.scale.category20());
+
+            var tail = g.selectAll("path");
+
+            d3.timer(function() {
+              boids.forEach(function(boid) {
+                boid(boids);
+              });
+
+              for (var i = -1; ++i < n;) {
+                var spermatozoon = spermatozoa[i],
+                    sboid = boids[i],
+                    path = spermatozoon.path,
+                    dx = sboid.velocity()[0],
+                    dy = sboid.velocity()[1],
+                    x = path[0][0] = sboid.position()[0],
+                    y = path[0][1] = sboid.position()[1],
+                    speed = Math.sqrt(dx * dx + dy * dy),
+                    count = speed * 10,
+                    k1 = -5 - speed / 3;
+
+                // Swim!
+                for (var j = 0; ++j < m;) {
+                  var vx = x - path[j][0],
+                      vy = y - path[j][1],
+                      k2 = Math.sin(((spermatozoon.count += count) + j * 3) / 600) / speed;
+                  path[j][0] = (x += dx / speed * k1) - dy * k2;
+                  path[j][1] = (y += dy / speed * k1) + dx * k2;
+                  speed = Math.sqrt((dx = vx) * dx + (dy = vy) * dy);
+                }
+              }
+
+              head.attr("transform", function(d) {
+                return "translate(" + d.path[0] + ")rotate(" + Math.atan2(d.boid.velocity()[1], d.boid.velocity()[0]) * degrees + ")";
+              });
+
+              tail.attr("d", function(d) {
+                return "M" + d.join("L");
+              });
+            });
+            /*g.on("mouseover", function(d,i){
+              $('#stats').text(JSON.stringify(d));
+            });*/
+
+      }
+
+
+      $('#add').on("click", function() {
+          var n = Math.random()*20;
+          var m = Math.random()*25;
+          createObject(n,m,svg);
+      });
+      $('#menu-button').click(function (e) {
+          e.preventDefault();
+          $('#menu').slideToggle('slow', function () {
+              if ($(this).is(':visible')) {
+                  $('header').addClass('active');
+                  $('header').removeClass('inactive');
+                  
+              } else {
+                  $('header').addClass('inactive');
+                  $('header').removeClass('active');
+                  
+              }
+          });
+      });
+
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41015178-3', 'karenaragon.com');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Brandon Black';
+  src:url('fonts/Brandon_blk.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Black Italic';
+  src:url('fonts/Brandon_blk_it.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Bold';
+  src:url('fonts/Brandon_bld.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Bold Italic';
+  src:url('fonts/Brandon_bld_it.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Brandon Medium';
+  src:url('fonts/Brandon_med.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Medium Italic';
+  src:url('fonts/Brandon_med_it.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Thin';
+  src:url('fonts/Brandon_thin.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brandon Thin Italic';
+  src:url('fonts/Brandon_thin_it.otf');
+  font-weight: normal;
+  font-style: normal;
+}

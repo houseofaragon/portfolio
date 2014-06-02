@@ -1,0 +1,90 @@
+body {
+  background: #000;
+  cursor: crosshair;
+  color: #A0A0A0;
+  font-family: "Brandon Regular";
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.container, #area{
+  margin: 0 auto;
+  width: 960px;
+  height: auto;
+  text-align: center;
+  font-family: "Brandon Regular";
+
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after { clear: both }
+.clearfix { *zoom: 1 }
+
+button{
+  background-color: #1f77b4;
+  border: none;
+  margin-top: 16px;
+  padding: 10px 20px;
+  color: #fff;
+  opacity: 0.8;
+  border-radius: 10px;
+  float:right;
+}
+
+button:hover{
+  color: #1f77b4;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+p{
+  float:left;
+  width: 80%;  
+  text-align: left;
+  font-family: "Brandon Medium";
+  font-size: 15px;
+}
+
+em{
+  color: #f0f0f0;
+}
+
+a{
+  text-decoration: none;
+  color: #909090;
+  font-family: "Brandon Medium";
+  font-size: 15px;
+}
+
+
+/*-------------- DATA VIZ ---------------*/
+#info{
+  position: fixed;
+  width: 960px;
+  margin: 2em auto;
+}
+
+
+ellipse {
+  opacity: .5;
+}
+
+path {
+  stroke-linecap: round;
+  opacity: .5;
+}
+
+.mid {
+  stroke-width: 5px;
+}
+
+.tail {
+  stroke-width: 2px;
+    opacity: .5;
+}
+

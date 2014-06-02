@@ -2,7 +2,7 @@
 class BubbleChart
   constructor: (data) ->
     @data = data
-    @width = 1000
+    @width = 960
     @height = 600
 
     @tooltip = CustomTooltip("gates_tooltip", 240)

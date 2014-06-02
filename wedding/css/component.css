@@ -1,0 +1,37 @@
+/* Set all parents to full height */
+html, body, 
+.container,
+.cbp-fbscroller,
+.cbp-fbscroller section { 
+	height: 100%; 
+}
+
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+	display: none;
+}
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.no-touch .cbp-fbscroller section {
+	background-attachment: fixed;
+}
+
+/* funnel */
+#fbsection1 {
+
+	background-image: url(../images/karemy-norm.png);
+
+}
+/* funnel */
+#fbsection2 {
+	background-image: url(../images/karemy-wed.png);
+	margin-bottom: 30%;
+}

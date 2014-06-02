@@ -8,7 +8,8 @@
 /*---------------- MAIN PAGE: slideshow --------------------- */
 /* main content slider */
 $(document).ready(function(){
-	$("#recipe-selector nav a").click(function() {
+	$("#recipe-selector nav a").click(function(e) {
+		e.preventDefault();
 		$("#recipe-selector nav a").removeClass();
 		$(this).addClass("activeSlide");
 		var tipID = "#Tip-"+$(this).html();
@@ -16,23 +17,34 @@ $(document).ready(function(){
 			$(tipID).fadeIn(500);
 			$(tipID).addClass("current");
 		});		
+		$()
 	});
 });
 
 /* ----------- MAIN PAGE: load list of herbs  ------------------*/
-var herb_list_one = ['basil', 'mint', 'oregano', 'thyme', 'cilantro'];
-var herb_list_two = ['dill', 'sage', 'rosemary', 'parsely'];
-function loadHerbList(name, herb_list){
-	for(herb in herb_list){
-		$('ul#'+name).append(
-			'<li> <a class="image" href="subpage.html"><img src="images/' + herb_list[herb] +'.png"></img></a><h4 class="title">'+ herb_list[herb] +'</h4><div class="region">Mediterranean</div><div class="details">Goes great with italian dishes, and easy to grow, as well as cook.</div><button class="icon add" id="' + herb_list[herb] +'">Get Creative</button></li>'
+/*var herb_list_one = ['basil', 'mint', 'oregano', 'thyme', 'cilantro','dill', 'sage', 'rosemary', 'parsely'];
+var herb_list_one = ['basil', 'mint', 'oregano', 'thyme', 'cilantro','dill', 'sage', 'rosemary', 'parsely'];
+*/
+var herb_list_one ={ 
+     basil:["basil", "South East Asia" , "Goes great with Italian or Asian dishes and easy to grow."], 
+     mint:["mint","Mediterranean" ,"From toothpaste to tea, one of the most versatile herbs around."], 
+     oregano:["oregano" ,"Mediterranean", "Pizza wouldn't be the same without this herb."],
+     thyme:["thyme","Mediterranean", "Spray around doorways and windows in summer to repel insects."],
+     cilantro:["cilantro" ,"Mediterranean", "Easily confused with flat-leaf parsley in appearance, so be sure to sniff carefully. "],
+     dill:["dill","Mediterranean", "Dill is a carminative, aromatic, anti-spasmodic, galactogogue."],
+     sage:["sage","Mediterranean", "The desire of sage is to render man immortal."],
+     rosemary:["rosemary","Mediterranean", "As for rosemary, I let it run all over my garden walls."],
+     parsely:["parsely","Mediterranean", "A great deal of the best European cooking is unthinkable without parsley"]
+
+};
+
+	for(var key in herb_list_one){
+		$('ul#herb_list_one').append(
+			'<li> <a class="image" href="blog/all-about-' + herb_list_one[key][0]+'"><img src="images/' + herb_list_one[key][0]+'.png"></img></a><h4 class="title">' + herb_list_one[key][0] +'</h4><div class="region">'+ herb_list_one[key][1]+'</div><div class="details">'+ herb_list_one[key][2]+ '</div><a class="icon add" href="blog/all-about-'+ herb_list_one[key][0] +'">Get Creative</a></li>'
 		);
 	}
-}
-var herb_one_name='herb_list_one';
-var herb_two_name='herb_list_two';
-loadHerbList(herb_one_name, herb_list_one);
-loadHerbList(herb_two_name, herb_list_two);
+
+
 
  /* ----------- SUB PAGES: append data  ------------------*/
 
@@ -71,12 +83,12 @@ $('button.add').on('click', function(){
 /*---------------- MAIN PAGE: d3 map --------------------- */
 
 //http://techslides.com/d3-world-maps-tooltips-zooming-and-queue/
-	var width = 960,
-	  	height = 500;
+	var width = 1024,
+	  	height = 600;
 
 	var projection = d3.geo.mercator()
 		//two-element array of longitude and latitude in degrees [0,0]
-		.translate([480, 300])
+		.translate([480, 400])
 	    .center([0, 0])
 	    .scale(150)
 	    //.rotate([-180,0]);
@@ -84,7 +96,9 @@ $('button.add').on('click', function(){
 	var svg = d3.select("#map")
 		.append("svg")
 	    .attr("width", width)
-	    .attr("height", height);
+	    .attr("height", height)
+	    .attr("fill", '333')
+	    .attr("stroke", '333');
 
 	var path = d3.geo.path()
 	    .projection(projection);
@@ -122,12 +136,12 @@ $('button.add').on('click', function(){
 	                return projection([d.lon, d.lat])[1];
 	           })
 	           .attr("r", 7)
-	           .style("fill", "#F78181")
+	           .style("fill", "#C77826")
 	           .on("mouseover", function(d){
 	           		tooltip.style("visibility", "visible");
   					tooltip.style("left", (d3.event.pageX + 10) + "px");
   					tooltip.style("top", (d3.event.pageY - 40) + "px");    
-  					tooltip.html('<img class="left small-img" src="images/basil.png"/> ' +d.city + ','+ d.country + '<br/> - - - <br/>'+ d.desc );
+  					tooltip.html('<img class="left small-img" src="images/basil.png"/> ' +d.city + ' - '+ d.country + '<br/> - - - <br/>'+ d.desc );
 	           		return tooltip;
 	           	})
 	           .on("mouseout", function(){return tooltip.style("visibility", "hidden");})
@@ -143,4 +157,16 @@ $('button.add').on('click', function(){
 	});
 	//svg.call(zoom);
 
-	
+/* ----  word animation ---*/
+$(function() {
+
+    changer();
+});
+
+function changer() {
+    var words = ["creative","inventive","experimental","imaginative"];
+    var idx = Math.floor(words.length * Math.random());
+    $('#change').text(words[idx]).show('slow');
+    var time = Math.floor(2000);
+    setTimeout(changer,time);
+}

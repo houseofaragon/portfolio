@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>
+	<style>#top, #bottom, #left, #right { display: none; }</style>
+<![endif]-->
+<html class=" js no-touch" style=""><head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0; user-scalable=0;' name='viewport'"> 
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="description" content="Karen C. Aragon a developer based in Brooklyn, NY">
+	<meta name="keywords" content="front-end web developer, designer, data wrangler">
+	<title>Hi, I'm Karen Aragon.</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../css/fonts.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../stop-and-frisk/css/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../css/global.css" media="screen">
+</head>
+<body>
+<header id="header" class="inactive"> 
+      <section id="menu" class="row clearfix inactive">
+        <ul class="span_1 column">
+          <li><a href="../packs/">Travel in packs</a></li>
+          <li><a href="../space/">Space is Noisy</a></li>
+          <li><a href="../herbally/index.php">Herbally</a></li>
+          <li><a href="../Tastefully/">Tastefully</a></li>
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../jazz/">Jazz Drum Machine</a></li>
+          <li><a href="../weather/">Do I Need A ____ ?</a></li>
+          <li><a href="../wedding/">Wedding</a></li>
+          <li><a href="../dengine/">dEngine</a></li>
+          <!--<li><a href="../gem/">Global Entertainment MGMT</a></li>-->
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../consumer-complaints/">Credit Card Consumer Complaints</a></li>
+          <li><a href="../stop-and-frisk/">NYPD Stop & Frisk</a></li>
+          <li><a href="../fdic/">FDIC History</a></li>
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="http://www.github.com/houseofaragon">Github</a></li>
+          <li><a target="_blank" href="">Contact</a></li>
+        </ul> 
+      </section>
+      <section id="menu-button" class="row clearfix">MENU</section>
+</header>
+	<div class="container">
+		<div id="desc">
+			<h1>DECISION ENGINE</h1>
+			- - - - - - -
+			<p id="long-text"> Decision Engine is a web application that provides access to data extracted from online chatter about consumer decisions. For this section, I designed and implemented an interactive dashboard, a page for website metics, and a multifaceted query builder that allows users to filter the various analytics for a given product over time, and to allow for rapid comparison to similar products in the market.
+			The site itself is built on the Django framework and the visualizations are built using Highcharts.</p>
+			<p id="long-text">Below is a screenshot of dEngine's analytics dashboard for adderall, which displays the product's conversion rate, competition and market information. (All information is dummy data for legal reasons.) </p>
+
+			<img src="../css/images/dashboard.png" alt="dengine-dashboard">
+			<p id="long-text"> Below is a screenshot of dEngine's 'Websites' page which gives information on what sites produce the most chatter for a given drug, as well as what topics are most frequently discussed.  The graph is built with Highcharts and the tables use django-tables-2.</p>
+			<img src="../css/images/web.png" alt="dengine-dashboard">
+
+			<p id="long-text"> dEngine also provides a multi-faceted search interface enabling users to dril down into the data. The user is able to edit, append, and clear their queries while building.     </p>
+			<img src="../css/images/filter.png" alt="filter-dashboard">
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../js/analytics.js" async=""></script>
+	<script type="text/javascript" src="../js/modernizr.js"></script>
+	<script type="text/javascript" type="text/javascript" src="../js/jquery.min.js"></script> 
+	<script type="text/javascript" src="../js/portfolio.js"></script>
+	<script type="text/javascript" src="../js/media.js"></script>
+	<script type="text/javascript">
+	 $('#menu-button').click(function (e) {
+	          e.preventDefault();
+	          $('#menu').slideToggle('slow', function () {
+	              if ($(this).is(':visible')) {
+	                  $('header').addClass('active');
+	                  $('header').removeClass('inactive');
+	                  
+	              } else {
+	                  $('header').addClass('inactive');
+	                  $('header').removeClass('active');
+	                  
+	              }
+	          });
+	      });
+	</script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41015178-3', 'karenaragon.com');
+  ga('send', 'pageview');
+
+</script>
+</body></html>

@@ -6,11 +6,12 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     	<meta name="description" content="Jazz Drum Machine:  Powered by Echo Nest Remix">
     	<meta name="author" content="Ben Lacker. Thanks to: Brian Whitman / Paul Lamere / Thor Kell">
-
 		<title>JAZZ DM by Ben Lacker</title>
 		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 		<link rel="stylesheet" media="screen, projection" href="../css/fonts.css">
-		<link rel="stylesheet" media="screen, projection" href="index.css">
+		<link rel="stylesheet" media="screen, projection" href="../css/global.css">
+
+		<link rel="stylesheet" media="screen, projection" href="css/index.css">
 
 		<style type="text/css">
 			/*one column*/
@@ -26,23 +27,38 @@
 	</head>
 
 	<body>
-	<div id="previous_project">
-	  <div class="prev_text">
-	    <a href="../stop-and-frisk/index.html">Prev </a>
-	  </div>
-	  <div class="prev_note"> < </div>
-	</div>
-	<div id="next_project">
-	  <div class="next_note"> > </div>
-	  <div class="next_text">
-	    <a href="../fdic/index.html">Next</a>
-	  </div>
-	</div>
+<header id="header" class="inactive"> 
+      <section id="menu" class="row clearfix inactive">
+        <ul class="span_1 column">
+          <li><a href="../packs/">Travel in packs</a></li>
+          <li><a href="../space/">Space is Noisy</a></li>
+          <li><a href="../herbally/index.php">Herbally</a></li>
+          <li><a href="../Tastefully/">Tastefully</a></li>
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../jazz/">Jazz Drum Machine</a></li>
+          <li><a href="../weather/">Do I Need A ____ ?</a></li>
+          <li><a href="../wedding/">Wedding</a></li>
+          <li><a href="../dengine/">dEngine</a></li>
+          <!--<li><a href="../gem/">Global Entertainment MGMT</a></li>-->
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../consumer-complaints/">Credit Card Consumer Complaints</a></li>
+          <li><a href="../stop-and-frisk/">NYPD Stop & Frisk</a></li>
+          <li><a href="../fdic/">FDIC History</a></li>
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="http://www.github.com/houseofaragon">Github</a></li>
+          <li><a target="_blank" href="">Contact</a></li>
+        </ul> 
+      </section>
+      <section id="menu-button" class="row clearfix">MENU</section>
+</header>
 		<div id="top" class="group">
 			<div class="repo group clearfix">
 					<div class="logo">JAZZ DRUM MACHINE</div>
 					<div id="info"></div>
-
 			</div>
 			<menu>
 				<div class="arrow"></div>
@@ -69,7 +85,6 @@
 		              <input id='f-signature' type="hidden" name="signature" value="YOUR_CALCULATED_SIGNATURE">
 		              <input type="hidden" name="Content-Type" value="audio/mpeg">
 		              <input id="file" name="file" type="file"> 
-		              
 		              <input class="btn" id='upload' type="submit" value="Upload MP3"> 
 		            </form> 
 		            <br/>
@@ -94,12 +109,38 @@
 		</section>
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="bootstrap.min.js"></script>
-		<script type="text/javascript" src='remix.js'></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src='js/remix.js'></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/fancySelect.js"></script>
+		<script type="text/javascript" src='js/kmeans.js'></script>
+		<script type="text/javascript" src='js/jazzdrum.js'></script>
+		<script type="text/javascript">
+	 		$('#menu-button').click(function (e) {
+	          e.preventDefault();
+	          $('#menu').slideToggle('slow', function () {
+	              if ($(this).is(':visible')) {
+	                  $('header').addClass('active');
+	                  $('header').removeClass('inactive');
+	                  
+	              } else {
+	                  $('header').addClass('inactive');
+	                  $('header').removeClass('active');
+	                  
+	              }
+	          });
+	      });
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-		<script src="fancySelect.js"></script>
-		<script type="text/javascript" src='kmeans.js'></script>
-		<script type="text/javascript" src='jazzdrum.js'></script>
+		</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41015178-3', 'karenaragon.com');
+  ga('send', 'pageview');
+
+</script>
 	</body>
 </html>

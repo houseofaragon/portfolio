@@ -10,57 +10,75 @@
 	<meta name="description" content="Karen C. Aragon a developer based in Brooklyn, NY">
 	<meta name="keywords" content="front-end web developer, designer, data wrangler">
 	<title>Hi, I'm Karen Aragon.</title>
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="http://localhost/~karen/portfolio/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 	<link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id="fademenu">
-	<div id="quote">
-		<ul>
-			<li class="currently">"Stuff your eyes with wonder..." - <span>Ray Bradbury</span></li>
-		</ul>
-	</div>
-	<div class="logo">
-		<img src="Dennis%20Adelmann_files/logo.png" alt="logo">
-	</div>
-
-	<div class="navscroll">
-		<a  href="https://github.com/houseofaragon" >github</a>
-	</div>
-</div>
-
 <header>									
 	<nav>
-		<a class="target-link" href="https://github.com/houseofaragon" >github</a>
+		<a href="https://www.github.com/houseofaragon" >github</a>
+		<a href="mailto:karen.c.aragon@gmail.com?subject=Hi, Karen." >contact</a>
+
 	</nav>
 	<div id="quote">
 		<ul>
-			<li class="currently">"Stuff your eyes with wonder..." - <span>Ray Bradbury</span></li>
+			<li class="currently"><span>Hi, I'm </span>Karen Aragon<span> and I'm a developer.</span></li>
 		</ul>
 	</div>
 </header>
 
-<div id="intro">
-			<h1>I'm Karen Aragon.</h1>
-			<p> designer. developer. data wrangler. </p>
-			<p>You can get in touch with me <a href=""> here</a>.</p>
-		<!--<div id="dots"></div>-->
+<div id="info">
+	<p> Feel free to <span id="image">mouse </span> around. </p>
 </div>
 
 <div class="wrapper" id="projects">
-	<ul class="grid cs-style-1">
+	<ul class="grid projects-box">
+		<li>
+			<figure>
+			<img src="css/images/packs.png" alt="space">
+				<figcaption>
+				<h3>Travel in Packs</h3>
+				<hr>
+				<span>A d3 interactive visualization simulating the behavior of marine life.</span>
+				<span id="tools"> Tools used: d3.js, flocking algorithm</span>
+				<a href="packs/index.html">Visit</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+				<img src="css/images/consumer.png" alt="Consumer Complaints">
+				<figcaption>
+					<h3>Consumer Complaints</h3>
+					<hr>
+					<span>A d3 interactive visualization of credit card consumer complaints for the top four US banks from 2008-2011.</span><span id="tools">Tools used: d3, html, css, mysql</span>
+					<a href="consumer-complaints/index.html">Visit</a>
+				</figcaption>
+			</figure>
+		</li>
+		<li>
+			<figure>
+			<img src="css/images/space.png" alt="space">
+				<figcaption>
+				<h3>Space is noisy</h3>
+				<hr>
+				<span>An HTML5 audio app featuring sounds collected from NASA expeditions.</span><span id="tools"> Tools used: html5 audio tag, illustrator</span>
+				<a href="space/index.html">Visit</a>
+				</figcaption>
+			</figure>
+		</li>
 		<li>
 			<figure>
 				<img src="css/images/tastefully.png" alt="Tastefully">
 				<figcaption>
 					<h3>Tastefully</h3>
-					—
-					<span>A creative and informative site about culinary herbs with visualizations.</span>
-					Tools used: d3, js/jquery, html/css, php, wordpress, illustrator, photoshop
-					<a href="Tastefully/index.html">take a look</a>
+					<hr>
+					<span>A culinary site with interactive visualizations and detailed information for the usual suspects on my herb rack.</span>
+					<span id="tools">Tools used: d3, js/jquery, html/css, php, wordpress, illustrator, photoshop</span>
+					<a href="Tastefully/index.html">Visit</a>
 				</figcaption>
 			</figure>
 		</li>
@@ -69,33 +87,21 @@
 				<img src="css/images/dengine.png" alt="dengine">
 				<figcaption>
 				<h3>Decision Engine</h3>
-				—
-				<span>A web app providing analytical information of online consumer chatter surrounding pharmaceutical products. <br/> Tools used: python, mysql, django, html/css/js/jquery</span>
-				<a href="dengine/index.html">take a look</a>
+				<hr>
+				<span>A web app providing analytics about online consumer chatter surrounding pharmaceutical products.</span><span id="tools"> Tools used: python, mysql, django, html/css/js/jquery</span>
+				<a href="dengine/index.html">Visit</a>
 				</figcaption>
 			</figure>
 		</li>
 
-		
-		<li>
-			<figure>
-				<img src="css/images/consumer.png" alt="Consumer Complaints">
-				<figcaption>
-					<h3>Consumer Complaints</h3>
-					—
-					<span>A d3 interactive visualization of credit card consumer complaints for the top four US banks from 2008-2011. <br/>Tools used: d3, html, css, mysql</span>
-					<a href="consumer-complaints/index.html">take a look</a>
-				</figcaption>
-			</figure>
-		</li>
 		<li>
 			<figure>
 			<img src="css/images/wedding.png" alt="wedding">
 				<figcaption>
 				<h3>Wedding</h3>
-				—
-				<span>Online wedding invitation site for my own wedding on October 5th, 2013. <br/> Tools used: html/css/js/jquery, mysql, php, illustrator, photoshop</span>
-				<a href="wedding/index.html">take a look</a>
+				<hr>
+				<span>A wedding invitation site with a game built using Impactjs and rsvp functionality.</span><span id="tools"> Tools used: html/css/js/jquery, mysql, php, illustrator, photoshop</span>
+				<a href="wedding/index.html">Visit</a>
 				</figcaption>
 			</figure>
 		</li>
@@ -104,9 +110,10 @@
 				<img src="css/images/nypd.png" alt="NYPD">
 				<figcaption>
 				<h3>NYPD Stop and Frisk</h3>
-				—
-				<span>A d3 interactive visualization of NYPD Stop and Frisk Data from 2003-2011. <br/>Tools used: d3, leaflet.js, html, css, mysql</span>
-				<a href="stop-and-frisk/index.html">take a look</a>
+				<hr>
+				<span>A d3 interactive visualization of NYPD Stop and Frisk Data from 2003-2011.</span>
+				<span id="tools">Tools used: d3, leaflet.js, html, css, mysql</span>
+				<a href="stop-and-frisk/index.html">Visit</a>
 				</figcaption>
 			</figure>
 		</li>
@@ -118,13 +125,24 @@
 			<img src="css/images/jazzdrum.png" alt="jazz drum">
 				<figcaption>
 				<h3>Jazz Drum Machine</h3>
-				—
-				<span>Designed the interface for Ben Lacker's Jazz Drum Machine which output drum beats. <br/> Tools used: html/css, js/jquery, illustrator</span>
-				<a href="jazz/index.html">take a look</a>
+				<hr>
+				<span>A site redesign for Ben Lacker's Jazz Drum Machine.</span><span id="tools"> Tools used: html/css, js/jquery, illustrator</span>
+				<a href="jazz/index.html">Visit</a>
 				</figcaption>
 			</figure>
 		</li>
 
+		<li>
+			<figure>
+			<img src="css/images/fdic.png" alt="fdic history">
+				<figcaption>
+				<h3>FDIC History</h3>
+				<hr>
+				<span>A d3 visualization of the FDIC deposit and asset information for the top 25 US banks from 2003-2011.</span><span id="tools"> Tools used: d3, html/css,js, illustrator</span>
+				<a href="fdic/index.html">Visit</a>
+				</figcaption>
+			</figure>
+		</li>
 	</ul>
 
 <!-- /wrapper ende -->
