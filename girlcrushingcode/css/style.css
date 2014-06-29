@@ -1,0 +1,158 @@
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+		background-color: #f0f0f0;
+
+}
+
+
+body {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+.clearfix{
+	clear:both;
+}
+
+h1 {
+	font-size: 5em;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+a{
+	color: #e16160;
+}
+a:hover{
+	color: #000;
+}
+::selection {
+	background: #4fc1e9; 
+}
+
+::-moz-selection {
+	background: #4fc1e9; 
+}
+
+.wrapper {
+    min-height: 100%;
+	position: relative;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.header {
+	background-color: #000; /* 83C5D1 FF9E9D */
+	color: #fff;
+	padding: 30px 0;
+}
+
+span{
+	color: #e16160;
+}
+	.teaser {
+		font-weight: 100;
+		font-size: 1.2em;
+		margin: 30px 0;
+	}
+
+	.button {
+		margin: 10px 0;
+		padding: 15px 30px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: 300;
+		border-radius: 0;
+		background-color: #e16160;
+		color: #000;
+		-webkit-font-smoothing: antialiased;
+		transition: all ease .3s;
+		border: none;
+		border-radius: 2px;
+	}
+
+		.button:hover {
+			background-color: #FFFFFF;
+			color: #000;
+		}
+
+		.button:focus {
+			outline: 0;
+			-webkit-box-shadow: 0 0 0px rgba(0, 0, 0, .6);
+		    box-shadow: 0 0 0px rgba(0, 0, 0, .6);
+		}
+
+.content {
+	color: #000000;
+	padding-bottom: 80px;
+}
+	.cat{
+		float:left;
+		width: 50%;
+	}
+	.saying-container {
+		float:right;
+		margin: 30px 0;
+		font-weight: 100;
+		font-size: 30px;
+		max-width: 70%;
+		margin: 80px auto;
+		width: 50%;
+		text-align: left;
+	}
+
+.social {
+	position: absolute;
+	height: 80px;
+	bottom: 0;
+	margin-top: 20px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+	.social p {
+		font-size: 12px;
+		color: #606060;
+	}
+
+@media (max-width: 900px) {
+	h1 {
+		font-size: 3em;
+	}
+	.cat{
+		display:none;
+	}
+	.saying-container{
+		max-width: 100%;
+		text-align: center;
+		width: 100%;
+
+	}
+}
+@media (max-width: 500px) {
+	h1 {
+		font-size: 2em;
+		margin-top: 10%;
+		font-weight: 600;
+	}
+	.button {
+		width: 250px;
+	}
+	.cat{
+		display: none;
+	}
+	.saying-container{
+		max-width: 100%;
+		text-align: center;
+		width: 100%;
+	}
+}
