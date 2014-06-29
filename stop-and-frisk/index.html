@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NYPD Stop and Frisk Visualization</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" media="screen">
+	<link rel="stylesheet" href="../css/fonts.css" />
+	<link rel="stylesheet" href="css/leaflet.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/global.css" media="screen">
+
+	<!--[if lte IE 8]><link rel="stylesheet" href="../dist/leaflet.ie.css" /><![endif]-->
+</head>
+<body>
+<header id="header" class="inactive"> 
+      <section id="menu" class="row clearfix inactive">
+        <ul class="span_1 column">
+          <li><a href="../packs/">Travel in packs</a></li>
+          <li><a href="../space/">Space is Noisy</a></li>
+          <li><a href="../herbally/index.php">Herbally</a></li>
+          <li><a href="../Tastefully/">Tastefully</a></li>
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../jazz/">Jazz Drum Machine</a></li>
+          <li><a href="../weather/">Do I Need A ____ ?</a></li>
+          <li><a href="../wedding/">Wedding</a></li>
+          <li><a href="../dengine/">dEngine</a></li>
+          <!--<li><a href="../gem/">Global Entertainment MGMT</a></li>-->
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../consumer-complaints/">Credit Card Consumer Complaints</a></li>
+          <li><a href="../stop-and-frisk/">NYPD Stop & Frisk</a></li>
+          <li><a href="../fdic/">FDIC History</a></li>
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="http://www.github.com/houseofaragon">Github</a></li>
+          <li><a target="_blank" href="">Contact</a></li>
+        </ul> 
+      </section>
+      <section id="menu-button" class="row clearfix">MENU</section>
+</header>
+	
+	<div class="container">
+		<h1> NYPD Stop and Frisk Data </h1>
+		<p>"In her 195-page decision (regarding NYPD's Stop and Frisk Policies), Judge Scheindlin concluded that the stops, which soared in number over the last decade as crime continued to decline, demonstrated a widespread disregard for the Fourth Amendment, which protects against unreasonable searches and seizures by the government, as well as the 14th Amendment’s equal protection clause." 
+		<a href="http://www.nytimes.com/2013/08/13/nyregion/stop-and-frisk-practice-violated-rights-judge-rules.html?_r=0">NYT</a></p>
+		<p>Below is an interactive chloropleth map displaying the density of stops and frisk for New York City precincts.</p>
+		<div id="map"></div>
+		- - - - - - - 
+		<p>Every time a police officer stops a person in NYC, the officer is supposed to fill out a form to record the details of the stop. Officers fill out the forms by hand, and then the forms are entered manually into a database. There are 2 ways the NYPD reports this stop-and-frisk data: a paper report released quarterly and an electronic database released annually.</p>
+		<p>
+		The paper reports – which the N.Y.C.L.U. releases every three months – include data on stops, arrests, and summonses. The data are broken down by precinct of the stop and race and gender of the person stopped. The paper reports provide a basic snapshot on stop-and-frisk activity by precinct and are available here.
+		</p>
+		<p>
+		The electronic database includes nearly all of the data recorded by the police officer after a stop. The data include the age of person stopped, if a person was frisked, if there was a weapon or firearm recovered, if physical force was used, and the exact location of the stop within the precinct. </p>
+		
+		<br/>
+
+		<a class="text" href="http://www.nyclu.org/content/stop-and-frisk-data">source</a>
+	</div>
+	<script type="text/javascript" src="js/leaflet.js"></script>
+	<script type="text/javascript" src="js/precinctGEOData.js"></script>
+	<script type="text/javascript" src="../js/jquery.min.js"></script> 
+	<script type="text/javascript" src="js/stopandfrisk.js"></script>
+	<script type="text/javascript">
+		 $('#menu-button').click(function (e) {
+		          e.preventDefault();
+		          $('#menu').slideToggle('slow', function () {
+		              if ($(this).is(':visible')) {
+		                  $('header').addClass('active');
+		                  $('header').removeClass('inactive');
+		                  
+		              } else {
+		                  $('header').addClass('inactive');
+		                  $('header').removeClass('active');
+		                  
+		              }
+		          });
+		      });
+	</script>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41015178-3', 'karenaragon.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
