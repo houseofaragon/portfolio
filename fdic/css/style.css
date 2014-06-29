@@ -1,0 +1,205 @@
+
+body {
+  background: #F0F0F0;
+  color: #525252;
+  font-family: "Brandon Regular", serif;
+  border: 1em solid #fff;
+    font-size: 18px; 
+  padding: 0;
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+}
+
+header,
+footer,
+h1,
+h2,
+h3,
+h4,
+aside,
+p {
+  color: #525252;
+  font-family: "Brandon Regular","Univers","PT Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Brandon Bold","Univers","PT Sans", sans-serif;
+
+}
+
+h2 {
+  margin-top: 1em;
+}
+
+h2 a {
+  color: #ccc;
+  left: -20px;
+  position: absolute;
+  width: 740px;
+}
+
+p{
+  margin: 0 auto;
+  color: rgba(81,81,81,0.5);
+  padding-bottom: 1em;
+}
+footer {
+  font-size: small;
+  margin-top: 8em;
+}
+
+aside {
+  font-size: small;
+  width: 180px;
+  top: 300px;
+  right: 0;
+  position: absolute;
+}
+
+a {
+  color: #000000;
+}
+
+a:not(:hover) {
+  text-decoration: none;
+}
+
+.container{
+  width: 960px;
+  margin: 5em auto;
+  text-align: center;
+  position: relative;
+}
+
+.dot {
+  stroke: none;
+  opacity:0.5;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.label {
+  fill: #777;
+}
+
+.year.label {
+  font: 500 196px "Brandon Medium";
+  fill: #ddd;
+}
+
+.year.label.active {
+  fill: #aaa;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+  cursor: ew-resize;
+}
+
+
+.axis path, .axis line {
+  fill: none;
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+
+
+text {
+  font: 10px sans-serif;
+}
+
+.dot {
+  stroke: none;
+  opacity:0.8;
+
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.label {
+  fill: #777;
+}
+
+.year.label {
+  font: 100 196px "Helvetica Neue";
+  fill: #ddd;
+}
+
+.year.label.active {
+  fill: #aaa;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+  cursor: ew-resize;
+}
+
+node rect {
+  cursor: move;
+  fill-opacity: .5;
+  shape-rendering: crispEdges;
+}
+
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+
+.link:hover {
+  stroke-opacity: .5;
+  stroke: #66CCCC;
+}
+
+#tooltip {
+        position: absolute;
+        width: 300px;
+        height: auto;
+        padding: 10px;
+        background-color: #fff;
+}
+  #tooltip.hidden {
+    display: none;
+  }
+  #tooltip p { 
+    margin: 0;
+    font-family: sans-serif; font-size: 16px;
+    line-height: 20px;
+  }
+
+#key{
+  font-family: "Brandon Medium", Helvetica, Arial, sans-serif;
+}
+
+.chart{
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  margin: 0;
+}
+
+footer p{
+    font-family: "Brandon Medium", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+footer p a{
+  color: #888888;
+}
