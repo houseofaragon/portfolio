@@ -1,0 +1,102 @@
+
+[
+{
+    "className":    "sun",
+    "displayName":  "Sun",
+    "keyCode":       49,
+    "audioFiles":   [
+                    "50_11.ogg",
+                    "50_11.mp3"
+                    ],
+    "isNew":        false
+ },
+ {
+     "className":    "fiftycent",
+     "displayName":  "50 Cent",
+     "keyCode":      null,
+     "audioFiles":   [
+                     "50cent_2.ogg",
+                     "50cent_2.mp3"
+                     ],
+     "isNew":        true
+ },
+ {
+    "className":    "actionbronson",
+    "displayName":  "Action Bronson",
+    "keyCode":       50,
+    "audioFiles":   [
+                    "action_bronsolino.ogg",
+                    "action_bronsolino.mp3"
+                    ],
+    "isNew":        true
+ },
+ {
+    "className":    "actionbronson",
+    "displayName":  "Action Bronson",
+    "keyCode":       50,
+    "audioFiles":   [
+                    "action_yeah.ogg",
+                    "action_yeah.mp3"
+                    ],
+    "isNew":        true
+ },
+ {
+    "className":    "actionbronson",
+    "displayName":  "Action Bronson",
+    "keyCode":       50,
+    "audioFiles":   [
+                    "action_yo.ogg",
+                    "action_yo.mp3"
+                    ],
+    "isNew":        true
+ },
+ {
+    "className":    "akon",
+    "displayName":  "Akon",
+    "keyCode":       50,
+    "audioFiles":   [
+                    "akon_1.ogg",
+                    "akon_1.mp3"
+                    ],
+    "isNew":        false
+ },
+ {
+    "className":    "beaniesigel",
+    "displayName":  "Beanie Sigel",
+    "keyCode":       null,
+    "audioFiles":   [
+                    "beanie_mac.ogg",
+                    "beanie_mac.mp3"
+                    ],
+    "isNew":        true
+ },
+ {
+    "className":    "bigboi",
+    "displayName":  "Big Boi",
+    "keyCode":      null,
+    "audioFiles":   [
+                    "bigboi_1.ogg",
+                    "bigboi_1.mp3"
+                    ],
+    "isNew":        false
+ },
+ {
+    "className":    "bigl",
+    "displayName":  "Big L",
+    "keyCode":      null,
+    "audioFiles":   [
+                    "bigl_3.ogg",
+                    "bigl_3.mp3"
+                    ],
+    "isNew":        false
+ },
+ {
+    "className":    "bigl",
+    "displayName":  "Big L",
+    "keyCode":      null,
+    "audioFiles":   [
+                    "bigl_4.ogg",
+                    "bigl_4.mp3"
+                    ],
+    "isNew":        false
+ }]

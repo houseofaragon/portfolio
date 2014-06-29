@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  
+  <head>
+    <title>Space is Noisy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css" media="screen">
+  </head>
+  <body>
+<header id="header" class="inactive"> 
+      <section id="menu" class="row clearfix inactive">
+        <ul class="span_1 column">
+          <li><a href="../packs/">Travel in packs</a></li>
+          <li><a href="../space/">Space is Noisy</a></li>
+          <li><a href="../herbally/index.php">Herbally</a></li>
+          <li><a href="../Tastefully/">Tastefully</a></li>
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../jazz/">Jazz Drum Machine</a></li>
+          <li><a href="../weather/">Do I Need A ____ ?</a></li>
+          <li><a href="../wedding/">Wedding</a></li>
+          <li><a href="../dengine/">dEngine</a></li>
+          <!--<li><a href="../gem/">Global Entertainment MGMT</a></li>-->
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../consumer-complaints/">Credit Card Consumer Complaints</a></li>
+          <li><a href="../stop-and-frisk/">NYPD Stop & Frisk</a></li>
+          <li><a href="../fdic/">FDIC History</a></li>
+        </ul>
+        <ul class="span_1 column">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="http://www.github.com/houseofaragon">Github</a></li>
+          <li><a target="_blank" href="">Contact</a></li>
+        </ul> 
+      </section>
+      <section id="menu-button" class="row clearfix">MENU</section>
+</header>
+    <div class="container-fluid">
+      <h1> Space is noisy </h1>
+      <div class="row-fluid content">
+        <div class="span3" id="sun">sun</div>
+        <div class="span3" id="mercury">mercury</div>
+        <div class="span3" id="venus">venus</div>
+        <div class="span3" id="earth">earth</div>
+      </div>
+      <div class="row-fluid">
+        <div class="span3" id="mars">mars</div>
+        <div class="span3" id="jupiter">jupiter</div>
+        <div class="span3" id="saturn">saturn</div>
+        <div class="span3" id="uranus">uranus</div>
+      </div>
+      <div class="row-fluid">
+        <div class="span3" id="neptune">neptune</div>
+        <div class="span3" id="pluto">pluto</div>
+      </div>
+    </div>
+    <footer>
+      <p> All data thanks to <a href="http://www.nasa.gov/multimedia/videogallery/index.html#.UqIa52RDuPN">NASA</a>. 
+          Built by <a href="http://www.karenaragon.com">KCA</a>.
+      </p>
+    <footer>
+
+    <!--
+    <script id="soundBoardItemView" type="text/template">
+        <audio preload="none" title="<%= displayName %>" class="<%= className %>">
+          <% _.each(audioFiles, function(audioFile, i) { %>
+          <source src="audio/<%= audioFile %>" type="audio/<%= audioType[i] %>">
+          <% }); %>
+        </audio>
+      
+
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/app.js"></script>
+    -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/planets.js"></script>
+    <script type="text/javascript">
+       $('#menu-button').click(function (e) {
+                e.preventDefault();
+                $('#menu').slideToggle('slow', function () {
+                    if ($(this).is(':visible')) {
+                        $('header').addClass('active');
+                        $('header').removeClass('inactive');
+                        
+                    } else {
+                        $('header').addClass('inactive');
+                        $('header').removeClass('active');
+                        
+                    }
+                });
+            });
+      </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41015178-3', 'karenaragon.com');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
