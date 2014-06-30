@@ -1,0 +1,126 @@
+
+
+@font-face {
+  font-family: 'Brandon Medium';
+  src:url('fonts/Brandon_med.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Brandon Black';
+  src:url('fonts/Brandon_blk.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body{
+	background: #000;
+	background: url('../images/nightsky.png') top left repeat;
+	font-family: "Brandon Medium";
+	letter-spacing: 2px;
+	color: #f0f0f0;
+
+}
+
+.navbar a.brand, .navbar .nav li a{
+	text-shadow: none;
+    text-shadow: 0 0 0 #000;
+}
+
+.navbar-inner{
+	background: transparent;
+	border: none;
+}
+
+.navbar .nav ul li{
+	float: right;
+}
+
+h1{
+	font-size: 50px;
+	text-align: center;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	padding: 2em 0;
+    font-family: "Brandon Black";
+}
+
+.span3{
+	width: 260px;
+	height: 260px;
+	margin-bottom: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.span3:hover{
+	cursor: pointer;
+	color: #0088cc;
+}
+
+#sun{
+	background: #006699;
+	background: url('../images/sun.png') center no-repeat;
+
+
+}
+#mercury{
+	background: #00FFCC;
+	background: url('../images/mercury.png') center no-repeat;
+
+}
+
+#venus{
+	background: #0066CC;
+	background: url('../images/venus.png') center no-repeat;
+}
+
+#earth{
+	background: #0066FF;
+	background: url('../images/earth.png')center  no-repeat;
+}
+
+#mars{
+	background: #009999;
+	background: url('../images/mars.png') center no-repeat;
+}
+
+#jupiter{
+	background: url('../images/jupiter.png') center no-repeat;
+}
+
+#saturn{
+	background: #0099FF;
+	background: url('../images/saturn.png') center no-repeat;
+}
+
+#uranus{
+	background: url('../images/uranus.png') center no-repeat;
+
+}
+
+#neptune{
+	background: #00CCFF;
+	background: url('../images/neptune.png') center no-repeat;
+}
+
+#pluto{
+	background: #00FF99;
+	background: url('../images/pluto.png') center no-repeat;
+}
+
+footer {
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+footer p{
+	color: #f0f0f0;
+	bottom: 0;
+	padding: 4em 0 0 0;
+
+}
