@@ -1,0 +1,570 @@
+[
+  {
+    "site_name": "EarthJustice",
+    "site_link": "https://secure.earthjustice.org/site/Donation2?df_id=10960&10960.donation=form1&_ga=1.146521844.1974926048.1478708236",
+    "category": "climate-change",
+    "category_description": "how do i help climate change?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "Sierra Club",
+    "site_link": "https://vault.sierraclub.org/ways-to-give/#donate-maintab",
+    "category": "climate-change",
+    "category_description": "how do i help climate change?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "EarthJustice",
+    "site_link": "http://earthjustice.org/action",
+    "category": "climate-change",
+    "category_description": "how do i help climate change?",
+    "sub_category": "virtual-action",
+    "sub_category_description": "sign a petition, social media action, etc"
+  },
+  {
+    "site_name": "Sierra Club",
+    "site_link": "https://vault.sierraclub.org/ways-to-give/#join-maintab",
+    "category": "climate-change",
+    "category_description": "how do i help climate change?",
+    "sub_category": "virtual-action",
+    "sub_category_description": "sign a petition, social media action, etc"
+  },
+  {
+    "site_name": "Myron Ebell: Petition to not allow climate change-denier to lead EPA",
+    "site_link": "https://petitions.whitehouse.gov/petition/do-not-allow-myron-ebell-lead-epa-transition",
+    "category": "climate-change",
+    "category_description": "how do i help climate change?",
+    "sub_category": "virtual-action",
+    "sub_category_description": "sign a petition, social media action, etc"
+  },
+  {
+    "site_name": "Environmental Defense Fund",
+    "site_link": "https://www.edf.org/",
+    "category": "climate-change",
+    "category_description": "how do i help climate change?",
+    "sub_category": "virtual-action",
+    "sub_category_description": "sign a petition, social media action, etc"
+  },
+  {
+    "site_name": "Boys & Girls Club",
+    "site_link": "http://greatfutures.org/pages/waystogive.aspx?_ga=1.12737010.43999393.1478702949",
+    "category": "education",
+    "category_description": "how do i help education?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "The Future Project",
+    "site_link": "https://thefutureproject.giv.sh/d953",
+    "category": "education",
+    "category_description": "how do i help education?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "First Graduate",
+    "site_link": "https://www.commitchange.com/ca/san-francisco/first-graduate/campaigns/new-donor-challenge-grant",
+    "category": "education",
+    "category_description": "how do i help education?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "First Graduate",
+    "site_link": "https://firstgraduate.org/volunteer/",
+    "category": "education",
+    "category_description": "how do i help education?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer, go to a rally, etc"
+  },
+  {
+    "site_name": "Human Rights Campaign",
+    "site_link": "https://give.hrc.org/ea-action/action?ea.client.id=1954&ea.campaign.id=51848",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "GLAAD",
+    "site_link": "https://glaad.nationbuilder.com/donate",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "PFLAG",
+    "site_link": "https://www.pflag.org/supportpflag",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "GLSEN",
+    "site_link": "https://donate.glsen.org/page/contribute/Donate",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "The Trevor Project",
+    "site_link": "https://give.thetrevorproject.org/checkout/donation?eid=63307",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "ACLU",
+    "site_link": "https://action.aclu.org/donate-aclu?ms=web_horiz_nav_hp",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "Anti-Defamation League (anti-semitism and bigotry)",
+    "site_link": "https://action.aclu.org/donate-aclu?ms=web_horiz_nav_hp",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "Council on American-Islamic Relations",
+    "site_link": "https://www.cair.com/donations/general-donation/campaign/#/donation",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "Emily's List (democratic women in office)",
+    "site_link": "https://secure.emilyslist.org/page/contribute/donate-to-emily",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "Mazzoni Center (LGBTQ)",
+    "site_link": "https://www.mazzonicenter.org/donate-now",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "NAACP",
+    "site_link": "https://donate.naacp.org/page/contribute/make-a-contribution",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "NOW (National Organization for Women)",
+    "site_link": "https://salsa.wiredforchange.com/o/5996/p/salsa/donation/common/public/?donate_page_KEY=11005",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "She Should Run",
+    "site_link": "https://sheshouldrun.nationbuilder.com/donate",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "Southern Poverty Law Center",
+    "site_link": "https://donate.splcenter.org/sslpage.aspx?pid=463",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "Audre Lorde Project LGBT",
+    "site_link": "https://database.alp.org/civicrm/contribute/transact?reset=1&id=5",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  },
+  {
+    "site_name": "Petition to remove The Russell Amendment",
+    "site_link": "https://act.credoaction.com/sign/russell_amendment?sp_ref=243814044.4.176471.f.559259.7&referring_akid=.10921167.1zM3IR&source=fb_share_sp",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "virtual-action",
+    "sub_category_description": "sign a petition"
+  },
+  {
+    "site_name": "Million Woman March",
+    "site_link": "https://www.facebook.com/events/2169332969958991/?notif_t=plan_user_invited&notif_id=1478888859792855",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "Go to a rally"
+  },
+  {
+    "site_name": "Wear a Safety Pin",
+    "site_link": "http://www.vox.com/presidential-election/2016/11/10/13586322/trump-brexit-safety-pin",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "Wear a symbol"
+  },
+  {
+    "site_name": "Mazzoni Center",
+    "site_link": "https://www.mazzonicenter.org/donate-now/volunteer-opportunities",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer"
+  },
+  {
+    "site_name": "NAACP",
+    "site_link": "http://www.naacp.org/find-local-unit/",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer"
+  },
+  {
+    "site_name": "NAACP Legal Defense Fund: Volunteer again domestic Violence",
+    "site_link": "http://www.naacpldf.org/ways-get-involved",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer"
+  },
+  {
+    "site_name": "ALP: Get Involved",
+    "site_link": "http://alp.org/getinvolved",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer"
+  },
+  {
+    "site_name": "Black Lives Matter",
+    "site_link": "http://blacklivesmatter.com/getinvolved/",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer"
+  },
+  {
+    "site_name": "Trevor's Project - LGBTQ Youth Support",
+    "site_link": "http://cities.thetrevorproject.org/new-york-city/#get-involved",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer"
+  },
+  {
+    "site_name": "Trans Lifeline",
+    "site_link": "http://www.translifeline.org/help",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer"
+  },
+  {
+    "site_name": "NYCLU - New York Civil Liberties Union",
+    "site_link": "http://www.nyclu.org/regions/central-new-york/become-volunteer-or-intern",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer or intern"
+  },
+  {
+    "site_name": "Walk with your neighbor",
+    "site_link": "https://docs.google.com/forms/d/e/1FAIpQLScGWE8zpTAqoLj6HMLGkKIoKRDVq2RMW_vH8jjh0OwyBGU0YA/viewform?c=0&w=1",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "Walk with your neighbor"
+  },
+  {
+    "site_name": "Ladies Get Paid: Our Bill of Rights (NYC event Nov. 30)",
+    "site_link": "https://www.eventbrite.com/e/our-bill-of-rights-tickets-29331788168",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "Attend an event"
+  },
+  {
+    "site_name": "What to do if you witness Islamophobic harassment",
+    "site_link": "http://www.boredpanda.com/how-to-avoid-islamophobic-harassment-guide-maeril/",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "prevent harrassment"
+  },
+  {
+    "site_name": "She Should Run",
+    "site_link": "http://www.sheshouldrun.org/ask_a_woman_to_run_for_office",
+    "category": "equality",
+    "category_description": "how do i help equality?",
+    "sub_category": "physical-action",
+    "sub_category_description": "Nominate a Candidate"
+  },
+  {
+    "site_name": "RIP Medical Debt",
+    "site_link": "https://www.ripmedicaldebt.org",
+    "category": "economy",
+    "category_description": "how do i help our economy?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "National Jobs for All Coalition",
+    "site_link": "http://njfac.org/index.php/support-njfac/",
+    "category": "economy",
+    "category_description": "how do i help our economy?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "Border Angels",
+    "site_link": "http://www.borderangels.org/our-causes/",
+    "category": "international-affairs",
+    "category_description": "how do i help international affairs?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "Coalition for Humane Immigrant Rights of LA",
+    "site_link": "https://co.clickandpledge.com/sp/d1/default.aspx?wid=118896",
+    "category": "international-affairs",
+    "category_description": "how do i help international affairs?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "National Immigration Forum",
+    "site_link": "http://immigrationforum.org/heartsmindslives/",
+    "category": "international-affairs",
+    "category_description": "how do i help international affairs?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "The Young Center for Immigration:  works to protect the best interests of children who come to the U.S. on their own",
+    "site_link": "https://donatenow.networkforgood.org/TheYoungCenter",
+    "category": "international-affairs",
+    "category_description": "how do i help international affairs?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "HIAS",
+    "site_link": "https://secure2.convio.net/hias/site/Donation2;jsessionid=722E06C38F4A18CA8647AB34E2B4B6C3.app260a?df_id=1961&1961.donation=form1",
+    "category": "international-affairs",
+    "category_description": "how do i help international affairs?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "KIND: pro bono attorney partners at law firms, corporations, and law schools nationwide represent unaccompanied immigrant and refugee children in their deportation proceedings. Together, we ensure that no child stands in court alone.",
+    "site_link": "https://supportkind.org/donate/",
+    "category": "international-affairs",
+    "category_description": "how do i help international affairs?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "Center for International Policy",
+    "site_link": "http://www.ciponline.org/",
+    "category": "Internationalaffairs",
+    "category_description": "how do i help international affairs?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "National Immigration Law Center",
+    "site_link": "https://www.nilc.org/get-involved/",
+    "category": "international-affairs",
+    "category_description": "how do i help international affairs?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer"
+  },
+  {
+    "site_name": "US Committee for Refugees and Immigrants",
+    "site_link": "http://refugees.org/get-involved/",
+    "category": "international-affairs",
+    "category_description": "how do i help international affairs?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer"
+  },
+  {
+    "site_name": "NARAL (reproductive rights & freedom)",
+    "site_link": "https://actnow.prochoiceamerica.org/donate/supportnaral/?source=leftbar#.WCYQ7eErLrJ",
+    "category": "healthcare",
+    "category_description": "how do i help healthcare?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "RAINN",
+    "site_link": "https://donate.rainn.org/",
+    "category": "healthcare",
+    "category_description": "how do i help healthcare?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "Reproductive Health Access Project",
+    "site_link": "https://donatenow.networkforgood.org/1438163",
+    "category": "healthcare",
+    "category_description": "how do i help healthcare?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "Planned Parenthood",
+    "site_link": "https://secure.ppaction.org/site/Donation2?df_id=12913&12913.donation=form1",
+    "category": "healthcare",
+    "category_description": "how do i help healthcare?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "Families USA is a nonprofit organization dedicated to the achievement of high-quality, affordable and comprehensive health care for all.",
+    "site_link": "https://salsa4.salsalabs.com/o/50902/donate_page/donate",
+    "category": "healthcare",
+    "category_description": "how do i help healthcare?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "NARAL",
+    "site_link": "http://actnow.prochoiceamerica.org/signup/volunteer/?source=website#.WCYRH-ErLrJ",
+    "category": "healthcare",
+    "category_description": "how do i help healthcare?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer"
+  },
+  {
+    "site_name": "Rape, Abuse & Incest National Network",
+    "site_link": "https://www.rainn.org/get-involved",
+    "category": "healthcare",
+    "category_description": "how do i help healthcare?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer"
+  },
+  {
+    "site_name": "Planned Parenthood Volunteer nationwide",
+    "site_link": "https://plannedparenthoodrccorpvolunteer.peoplefluent.com/index.html",
+    "category": "healthcare",
+    "category_description": "how do i help healthcare?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer"
+  },
+  {
+    "site_name": "NYC Alliance Against Sexual Assult",
+    "site_link": "http://www.svfreenyc.org/volun_resources.html",
+    "category": "healthcare",
+    "category_description": "how do i help healthcare?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer"
+  },
+  {
+    "site_name": "Crisis Text Line",
+    "site_link": "http://www.crisistextline.org/",
+    "category": "healthcare",
+    "category_description": "how do i help healthcare?",
+    "sub_category": "physical-action",
+    "sub_category_description": "text for help"
+  },
+  {
+    "site_name": "Benefit Concert in LA: Music Unites Us All",
+    "site_link": "http://bit.ly/MusicUnitesUsAll",
+    "category": "healthcare",
+    "category_description": "how do i help healthcare?",
+    "sub_category": "physical-action",
+    "sub_category_description": "attend a benefit concert"
+  },
+  {
+    "site_name": "Everytown (gun control)",
+    "site_link": "https://donate.everytown.org/donate/support-everytown-t1/?source=etno_HPT1&utm_source=et_n_&utm_medium=_o&utm_campaign=HPT1",
+    "category": "us",
+    "category_description": "how do i help us?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "Our Revolution",
+    "site_link": "https://secure.actblue.com/contribute/page/ourrevolution?refcode=main-nav&amount=27.00",
+    "category": "us",
+    "category_description": "how do i help us?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donation"
+  },
+  {
+    "site_name": "START",
+    "site_link": "http://www.startguide.org/",
+    "category": "us",
+    "category_description": "how do i help us?",
+    "sub_category": "physical-action",
+    "sub_category_description": "a free 24-session study course that you conduct on your own. Gather 8 or 10 friends together, study and discuss environmental, domestic, and world issues using the on-line readings, read and think about the world we want and how to get there, and then act."
+  },
+  {
+    "site_name": "Volunteer Match website",
+    "site_link": "www.volunteermatch.org",
+    "category": "us",
+    "category_description": "how do i help us?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer database"
+  },
+  {
+    "site_name": "DoSomething",
+    "site_link": "https://www.dosomething.org/us",
+    "category": "us",
+    "category_description": "how do i help us?",
+    "sub_category": "physical-action",
+    "sub_category_description": "volunteer database"
+  },
+  {
+    "site_name": "Everytown Benefit at OTB Live in Brooklyn",
+    "site_link": "https://www.instagram.com/p/BMuAITVAoiv/?taken-by=otbirds",
+    "category": "us",
+    "category_description": "how do i help us?",
+    "sub_category": "physical-action",
+    "sub_category_description": "Attend a benefit concert"
+  },
+  {
+    "site_name": "Petition for to get HRC in office 12/19",
+    "site_link": "https://www.change.org/p/electoral-college-electors-electoral-college-make-hillary-clinton-president-on-december-19?recruiter=77753687&utm_source=share_petition&utm_medium=twitter&utm_campaign=share_twitter_responsive",
+    "category": "us",
+    "category_description": "how do i help us?",
+    "sub_category": "virtual-action",
+    "sub_category_description": "sign a petition"
+  },
+  {
+    "site_name": "Contact your elected officials",
+    "site_link": "https://www.usa.gov/elected-officials",
+    "category": "us",
+    "category_description": "how do i help us?",
+    "sub_category": "virtual-action",
+    "sub_category_description": "Contact elected officials"
+  },
+  {
+    "site_name": "campaign zero",
+    "site_link": "http://www.joincampaignzero.org/#vision",
+    "category": "us",
+    "category_description": "how do i help us?",
+    "sub_category": "money-based-action",
+    "sub_category_description": "donations, etc"
+  }
+]

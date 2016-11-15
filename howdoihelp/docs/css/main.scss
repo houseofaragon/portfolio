@@ -1,0 +1,66 @@
+.green {
+  background: $green;
+}
+
+.blue{
+  background: $blue;
+}
+
+.red{
+  background: $red;
+}
+
+.grey{
+  background: $grey;
+}
+
+.lightGrey{
+  background-color: $light-grey;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  color: $grey;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  height: 100%;
+  background: $white;
+}
+
+h1,h2,h3,h4,h5,h6{
+  padding: 2px;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+p{
+  padding: 2px;
+  margin: 0;
+  font-size: 1em;
+}
+
+.container{
+  margin: 0 auto;
+}
+
+a{
+  color: $purple;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.container{
+  background: $light-pink;
+  color: $purple;
+  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+  clear: both;
+}
+
+button {
+  padding: $padding;
+  font-family: 'Work Sans', sans-serif;
+}
+
